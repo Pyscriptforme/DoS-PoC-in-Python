@@ -23,7 +23,7 @@ meow or something idk
  ╱|、
 (˚ˎ 。7  
  |、˜〵          
-じしˍ,)ヽ
+じしˍ,)-
 its working dw twin
 """)
         time.sleep(0.2)
@@ -32,10 +32,19 @@ its working dw twin
  ╱|、
 (˚ˎ 。7  
  |、˜〵          
-じしˍ,)-
+じしˍ,)ヽ
 sudo apt install opsec twin <3
 """)
         time.sleep(0.2)
+        print(r"""
+ ╱|、
+(˚ˎ 。7  
+ |、˜〵          
+じしˍ,)-
+helloworld(print)
+""")
+        time.sleep(0.2)
+        os.system("clear")
         
 
 threading.Thread(target=the_main, daemon=True).start()
