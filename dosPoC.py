@@ -36,6 +36,7 @@ its working dw twin
 sudo apt install opsec twin <3
 """)
         time.sleep(0.2)
+        os.system("clear")
         print(r"""
  ╱|、
 (˚ˎ 。7  
