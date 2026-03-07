@@ -17,7 +17,7 @@ def cat_anim():
 じしˍ,)ノ
 meow or something idk
 """)
-        time.sleep(0.4)
+        time.sleep(0.2)
         os.system("clear")
         print(r"""
  ╱|、
@@ -26,7 +26,17 @@ meow or something idk
 じしˍ,)ヽ
 its working dw twin
 """)
-        time.sleep(0.4)
+        time.sleep(0.2)
+        os.system("clear")
+        print(r"""
+ ╱|、
+(˚ˎ 。7  
+ |、˜〵          
+じしˍ,)-
+sudo apt install opsec twin <3
+""")
+        time.sleep(0.2)
+        
 
 threading.Thread(target=the_main, daemon=True).start()
 threading.Thread(target=cat_anim, daemon=True).start()
